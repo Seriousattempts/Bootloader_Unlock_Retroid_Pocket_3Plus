@@ -10,7 +10,7 @@ The bootloader unlock is required before flashing any custom firmware or custom 
 
 
 
-#Warning:
+## Warning:
 
 *I did this late at night with no sleep and after I stopped recording, going based off of lack of energy memory. I apologize ahead of time*
 
