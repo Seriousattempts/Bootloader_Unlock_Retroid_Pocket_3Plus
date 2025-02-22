@@ -30,7 +30,7 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 - Enabled developer options on Rp3+ (Go to Settings → About Phone, Tap Build Number 7 times. Then back to Settings → System, Advanced, Developer options. **Enable USB Debugging and OEM Unlock in Developer Options**
 
 # Video version:
-[![Unlock bootloader in RP3+](https://i.ytimg.com)](https://www.youtube.com/ "Unlock bootloader in RP3+")
+[![Unlock bootloader in RP3+](https://i.ytimg.com/vi_webp/0o8FVecnDrY/maxresdefault.webp)](https://www.youtube.com/watch?v=0o8FVecnDrY) "How to unlock Retroid Pocket 3+ UNISOC T618 bootloader")
 
 1. Install Unisoc driver, extract adb to the extracted ums512_alldocube_iplay_50_EN_20230801 folder
 2. Put RP3+ into Android Recovery (Turn off, turn on while holding power along with volume buttons)
