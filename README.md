@@ -32,29 +32,29 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 # Video version:
 [![How to unlock Retroid Pocket 3+ UNISOC T618 bootloader](https://i.ytimg.com/vi_webp/0o8FVecnDrY/maxresdefault.webp)](https://www.youtube.com/watch?v=0o8FVecnDrY) "How to unlock Retroid Pocket 3+ UNISOC T618 bootloader")
 
-1. Install Unisoc driver, extract adb to the extracted ums512_alldocube_iplay_50_EN_20230801 folder
-2. Put RP3+ into Android Recovery (Turn off, turn on while holding power along with volume buttons)
-3. Run *unlock_autopatch_512.bat* from computer, and then enter fastboot on RP3+
-4. Follow unlock_autopatch_512 instructions, profit I think.
+**1.** Install Unisoc driver, extract adb to the extracted ums512_alldocube_iplay_50_EN_20230801 folder
+**2.** Put RP3+ into Android Recovery (Turn off, turn on while holding power along with volume buttons)
+**3.** Run *unlock_autopatch_512.bat* from computer, and then enter fastboot on RP3+
+**4.** Follow unlock_autopatch_512 instructions, profit I think.
 
 Note, if that doesn't work
-5. Restart device back to recovery mode, go to "Apply update from ADB" and restart running *unlock_autopatch_512.bat* from computer
+**5.** Restart device back to recovery mode, go to "Apply update from ADB" and restart running *unlock_autopatch_512.bat* from computer
 
-6. If that doesn't work:
+**6.** If that doesn't work:
 
-6.1. Restart RP3+ to normal use
+**6.1.** Restart RP3+ to normal use
 
-6.2. Open cmd from file explorer folder of "ums512_alldocube_iplay_50_EN_20230801"
+**6.2.** Open cmd from file explorer folder of "ums512_alldocube_iplay_50_EN_20230801"
 
 Type the following:
 
-6.3. adb devices
+**6.3.** adb devices
 
-6.4. adb push fdl1-dl.bin /data/local/tmp/
+**6.4.** adb push fdl1-dl.bin /data/local/tmp/
 
-6.5. adb push fdl2-dl.bin /data/local/tmp/
+**6.5.** adb push fdl2-dl.bin /data/local/tmp/
 
-6.6. unlock_autopatch_512
+**6.6.** unlock_autopatch_512
 
 
 
