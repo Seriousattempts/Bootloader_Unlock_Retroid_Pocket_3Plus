@@ -43,12 +43,12 @@ Note, if that doesn't work
 - Restart RP3+ to normal use
 - Open cmd from file explorer folder of "ums512_alldocube_iplay_50_EN_20230801"
 - Run the following:
-6.1.
+6.1. Type:
 - adb devices
-6.2. 
+6.2. Type:
 - adb push fdl1-dl.bin /data/local/tmp/
 - adb push fdl2-dl.bin /data/local/tmp/
-6.3.
+6.3. Type:
 - unlock_autopatch_512
 
 
