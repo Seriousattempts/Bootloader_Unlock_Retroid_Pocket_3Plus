@@ -39,13 +39,21 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 
 Note, if that doesn't work
 5. Restart device back to recovery mode, go to "Apply update from ADB" and restart running *unlock_autopatch_512.bat* from computer
+
 6. If that doesn't work:
+
 6.1. Restart RP3+ to normal use
+
 6.2. Open cmd from file explorer folder of "ums512_alldocube_iplay_50_EN_20230801"
+
 Type the following:
+
 6.3. adb devices
+
 6.4. adb push fdl1-dl.bin /data/local/tmp/
+
 6.5. adb push fdl2-dl.bin /data/local/tmp/
+
 6.6. unlock_autopatch_512
 
 
