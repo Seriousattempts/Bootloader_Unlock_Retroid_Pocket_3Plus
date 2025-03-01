@@ -3,10 +3,10 @@ Bootloader unlock using CVE-2022-38694 for Retroid Pocket 3+
 
 The bootloader unlock is required before flashing any custom firmware or custom fixes like:
 - [Batocera Odroid M1](https://batocera.org/download)
-- [GammaOS](https://github.com/TheGammaSqueeze/GammaOS)
-- [GammaOS RK3566](https://github.com/TheGammaSqueeze/GammaOS-RK3566)
-- [ROCKNIX x55 |SAFE|](https://rocknix.org/devices/powkiddy/x55/)
-- [RK3588 |PS2/Wii Emulation|RISKY|](https://rocknix.org/contribute/build/#option-1-clean-the-package-that-failed)
+- ~~[GammaOS](https://github.com/TheGammaSqueeze/GammaOS)~~ Device freezes at logo
+- ~~[GammaOS RK3566](https://github.com/TheGammaSqueeze/GammaOS-RK3566)~~ Device freezes at logo
+- [ROCKNIX x55](https://rocknix.org/devices/powkiddy/x55/)
+- [ROCKNIX RK3588](https://rocknix.org/contribute/build/#option-1-clean-the-package-that-failed)
 
 
 
