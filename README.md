@@ -11,6 +11,7 @@ The bootloader unlock is required before flashing any custom firmware or custom 
 
 
 ## Warning:
+# There is no fix to unpatch it without putting your device in an indefinate boot loop
 
 *I did this late at night with no sleep and after I stopped recording, going based off of lack of energy memory. I apologize ahead of time*
 
