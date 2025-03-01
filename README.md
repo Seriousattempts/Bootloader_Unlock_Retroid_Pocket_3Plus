@@ -78,3 +78,7 @@ Connect Device:
 
 
 **By following this guide, you acknowledge that you understand the risks involved in unlocking your device's bootloader. Ensure you have backed up all important data before proceeding.**
+
+To restore to an older firmware if you brick your device: https://github.com/skompc/retroid-pocket-3-plus-autoroot/issues/1#issuecomment-2690916853
+- As of now, it will restore to a RP3+ that doesn't have access to the control pad via Magisk.
+
