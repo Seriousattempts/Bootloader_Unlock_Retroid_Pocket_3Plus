@@ -35,13 +35,12 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 
 **1.** Install Unisoc driver, extract adb to the extracted ums512_alldocube_iplay_50_EN_20230801 folder
 
-**2.** Put RP3+ into Android Recovery (Turn off, turn on while holding power along with volume buttons). Plug in your device after
+**2.** Put RP3+ into Android Recovery/Download Mode (Turn off, turn on while holding power along with bottom volume button). Plug in your device after
 
 **3.** Run *unlock_autopatch_512.bat* from computer, and then enter fastboot on RP3+
 
 **4.** Follow unlock_autopatch_512 instructions, profit I think. If that doesn't work, have your device plugged in first and then go into Android Recovery.
 
-# Note, if that doesn't work
 **5.** Restart device back to recovery mode, go to "Apply update from ADB" and restart running *unlock_autopatch_512.bat* from computer
 
 **6.** If that doesn't work:
@@ -59,8 +58,6 @@ Type the following:
 **6.5.** adb push fdl2-dl.bin /data/local/tmp/
 
 **6.6.** unlock_autopatch_512
-
-
 
 # Unlocking Procedure (Attempt 2, never attempted, taken from [https://github.com/TheGammaSqueeze/Bootloader_Unlock_Anbernic_T820](https://github.com/TheGammaSqueeze/Bootloader_Unlock_Anbernic_T820)):
 **7.** Shut Down Device: Ensure your device is completely shut down with no USB cable attached.
@@ -80,6 +77,5 @@ Connect Device:
 
 **By following this guide, you acknowledge that you understand the risks involved in unlocking your device's bootloader. Ensure you have backed up all important data before proceeding.**
 
-To restore to an older firmware if you brick your device: https://github.com/skompc/retroid-pocket-3-plus-autoroot/issues/1#issuecomment-2690916853
-- As of now, it will restore to a RP3+ that doesn't have access to the control pad via Magisk.
+To restore to the latest firmware file: [https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8](https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8)
 
