@@ -11,8 +11,6 @@ The bootloader unlock is required before flashing any custom firmware or custom 
 
 
 ## Warning:
-# There is no fix to unpatch it without putting your device in an indefinate boot loop
-
 *I did this late at night with no sleep and after I stopped recording, going based off of lack of energy memory. I apologize ahead of time*
 
 Proceed at your own risk. 
@@ -35,13 +33,14 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 
 **1.** Install Unisoc driver, extract adb to the extracted ums512_alldocube_iplay_50_EN_20230801 folder
 
-**2.** Put RP3+ into Android Recovery/Download Mode (Turn off, turn on while holding power along with bottom volume button). Plug in your device after
+**2.0** Put RP3+ into Android Recovery/Download Mode (Turn off, turn on while holding power along with bottom volume button) while your device is plugged in (You'll hopefully hear it [at least on windows] connect as you turn it on with a black screen in download mode)
+**2.1** Download Mode work better for me when I reformatted the device with a new .pac file 4/22/2015 [https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8](https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8)
 
 **3.** Run *unlock_autopatch_512.bat* from computer, and then enter fastboot on RP3+
 
 **4.** Follow unlock_autopatch_512 instructions, profit I think. If that doesn't work, have your device plugged in first and then go into Android Recovery.
 
-**5.** Restart device back to recovery mode, go to "Apply update from ADB" and restart running *unlock_autopatch_512.bat* from computer
+**5.** Restart device back to recovery mode, go to "Apply update from ADB" and restart running *unlock_autopatch_512.bat* from computer, follow those instructions.
 
 **6.** If that doesn't work:
 
@@ -76,6 +75,4 @@ Connect Device:
 
 
 **By following this guide, you acknowledge that you understand the risks involved in unlocking your device's bootloader. Ensure you have backed up all important data before proceeding.**
-
-To restore to the latest firmware file: [https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8](https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8)
 
