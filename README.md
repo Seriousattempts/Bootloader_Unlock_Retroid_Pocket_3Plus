@@ -1,21 +1,21 @@
 # Bootloader_Unlock_Retroid_Pocket_3Plus
 Bootloader unlock using CVE-2022-38694 for Retroid Pocket 3+
+**By following this guide, you acknowledge that you understand the risks involved in unlocking your device's bootloader. Ensure you have backed up all important data before proceeding. Credits: This bootloader unlocking process is based on the work from the following repository: TomKing062/CVE-2022-38694_unlock_bootloader.**
 
-The bootloader unlock is required before flashing any custom firmware or custom fixes like:
-- [Batocera Odroid M1](https://batocera.org/download)
-- ~~[GammaOS](https://github.com/TheGammaSqueeze/GammaOS)~~ Device freezes at logo
-- ~~[GammaOS RK3566](https://github.com/TheGammaSqueeze/GammaOS-RK3566)~~ Device freezes at logo
-- [ROCKNIX x55](https://rocknix.org/devices/powkiddy/x55/)
-- [ROCKNIX RK3588](https://rocknix.org/contribute/build/#option-1-clean-the-package-that-failed)
+The bootloader unlock is required before flashing any custom firmware or custom fixes like
+- ~~[GammaOS](https://github.com/TheGammaSqueeze/GammaOS)~~ Device doesn't install GammaOS
 
 
-
-## Warning:
+## Warning for video proof:
 *I did this late at night with no sleep and after I stopped recording, going based off of lack of energy memory. I apologize ahead of time*
+
+# Video version:
+[![How to unlock Retroid Pocket 3+ UNISOC T618 bootloader](https://i.ytimg.com/vi_webp/0o8FVecnDrY/maxresdefault.webp)](https://www.youtube.com/watch?v=0o8FVecnDrY) "How to unlock Retroid Pocket 3+ UNISOC T618 bootloader")
 
 Proceed at your own risk. 
 Unlocking the bootloader will void your warranty and can potentially damage your device. I am not responsible for any damage to your device or any data loss incurred.
-Only supported on Windows systems.
+
+Only attempted on Windows systems.
 Important Notices:
 
 Data Erasure: Unlocking the bootloader will erase all data on your device. Your device will be factory reset to its original state.
@@ -27,9 +27,6 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 - ums512_alldocube_iplay_50_EN_20230801 from [https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/releases/tag/1.72](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/releases/tag/1.72)
 - [ADB (Platform Tools)](https://developer.android.com/tools/releases/platform-tools) (maybe, I really don't remember but I put it in the extracted ums512_alldocube_iplay_50_EN_20230801 folder and I always go to the adb folder when using it
 - Enabled developer options on Rp3+ (Go to Settings → About Phone, Tap Build Number 7 times. Then back to Settings → System, Advanced, Developer options. **Enable USB Debugging and OEM Unlock in Developer Options**
-
-# Video version:
-[![How to unlock Retroid Pocket 3+ UNISOC T618 bootloader](https://i.ytimg.com/vi_webp/0o8FVecnDrY/maxresdefault.webp)](https://www.youtube.com/watch?v=0o8FVecnDrY) "How to unlock Retroid Pocket 3+ UNISOC T618 bootloader")
 
 **1.** Install Unisoc driver, extract adb to the extracted ums512_alldocube_iplay_50_EN_20230801 folder
 
@@ -58,21 +55,13 @@ Type the following:
 
 **6.6.** unlock_autopatch_512
 
-# Unlocking Procedure (Attempt 2, never attempted, taken from [https://github.com/TheGammaSqueeze/Bootloader_Unlock_Anbernic_T820](https://github.com/TheGammaSqueeze/Bootloader_Unlock_Anbernic_T820)):
-**7.** Shut Down Device: Ensure your device is completely shut down with no USB cable attached.
 
-**7.1** Run Unlock Script: Open the unlock_autopatch_512.bat script on your computer.
+The bootloader unlock is required before flashing any custom firmware or custom fixes like
+- ~~[GammaOS](https://github.com/TheGammaSqueeze/GammaOS)~~
 
-Connect Device:
+1. GammaOS Lite v1.5.1 - Anbernic RG505: Device doesn't install GammaOS after running EraseUserData
+2. GammaOS v1.5.1 - Anbernic RG505: Device doesn't install GammaOS after running EraseUserData
+3. GammaOS Core Alternative Flashing Guide using RKDevTool (It's not Rockchip, duh) https://www.youtube.com/watch?v=_-6ZYrNGTRs
+4. 
 
-**7.2** Within 30 seconds of running the script, hold down the HOME/BACK button on the turned-off unit.
-
-**7.3** While holding the button, plug in the USB cable to your device.
-
-**7.4** Continue Unlock Process: The unlock script will now proceed. You can release any buttons once the script is running.
-
-**7.5** Wipe data: Your unit will now reboot. It will likely show the battery charging screen, in this case just turn on the device. Upon the second reboot you will be asked to wipe your device. Use the volume buttons to navigate to the wipe option, use the power button to confirm this option. Your unlock is now complete.
-
-
-**By following this guide, you acknowledge that you understand the risks involved in unlocking your device's bootloader. Ensure you have backed up all important data before proceeding.**
 
