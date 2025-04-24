@@ -5,8 +5,8 @@ Bootloader unlock using CVE-2022-38694 for Retroid Pocket 3+
 ## Warning for video proof:
 *I did this late at night with no sleep and after I stopped recording, going based off of lack of energy memory. I apologize ahead of time*
 
-# Video version:
-[![How to unlock Retroid Pocket 3+ UNISOC T618 bootloader](https://i.ytimg.com/vi_webp/0o8FVecnDrY/maxresdefault.webp)](https://www.youtube.com/watch?v=0o8FVecnDrY) "How to unlock Retroid Pocket 3+ UNISOC T618 bootloader")
+# Video version "How to unlock Retroid Pocket 3+ UNISOC T618 bootloader":
+[![How to unlock Retroid Pocket 3+ UNISOC T618 bootloader](https://i.ytimg.com/vi_webp/0o8FVecnDrY/maxresdefault.webp)](https://www.youtube.com/watch?v=0o8FVecnDrY)
 
 Proceed at your own risk. 
 Unlocking the bootloader will void your warranty and can potentially damage your device. I am not responsible for any damage to your device or any data loss incurred.
