@@ -27,7 +27,7 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 **1.** Install Unisoc driver, extract adb to the extracted ums512_alldocube_iplay_50_EN_20230801 folder
 
 **2.0** Put RP3+ into Android Recovery/Download Mode (Turn off, turn on while holding power along with bottom volume button) while your device is plugged in (You'll hopefully hear it [at least on windows] connect as you turn it on with a black screen in download mode)
-**2.1** Download Mode work better for me when I reformatted the device with a new .pac file 4/22/2015 [https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8](https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8)
+**2.1** Download Mode work better for me when I reformatted the device with a new .pac file 4/22/2025 [https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8](https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8)
 
 **3.** Run *unlock_autopatch_512.bat* from computer, and then enter fastboot on RP3+
 
