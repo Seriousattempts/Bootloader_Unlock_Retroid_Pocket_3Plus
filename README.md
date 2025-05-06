@@ -3,7 +3,10 @@
 2 Methods of unlocking boorloader for the RP3+
 
 Bootloader unlock using CVE-2022-38694 for Retroid Pocket 3+
-**By following this guide, you acknowledge that you understand the risks involved in unlocking your device's bootloader. Ensure you have backed up all important data before proceeding. Credits: This bootloader unlocking process is based on the work from the following repository: TomKing062/CVE-2022-38694_unlock_bootloade https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader.**
+**By following this guide, you acknowledge that you understand the risks involved in unlocking your device's bootloader. Ensure you have backed up all important data before proceeding.
+
+
+Credits: This bootloader unlocking process is based on the work from the following repository: TomKing062/CVE-2022-38694_unlock_bootloade https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader.**
 
 ## Warning for video proof:
 *I did this late at night with no sleep and after I stopped recording, going based off of lack of energy memory. I apologize ahead of time*
