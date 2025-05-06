@@ -86,20 +86,33 @@ VirtualBox method:
   
   **4.2** Run the following:
 
-`sudo apt update
-sudo apt install android-tools-adb
-adb version
-echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="1782", ATTR{idProduct}=="4ee0", MODE="0666", GROUP="plugdev"' | sudo tee -a /etc/udev/rules.d/70-android.rules
-sudo chmod a+r /etc/udev/rules.d/70-android.rules
-sudo udevadm control --reload-rules
-sudo udevadm trigger
-sudo adb kill-server
-sudo adb start-server
-SUBSYSTEM=="usb", ATTR{idVendor}=="1782", ATTR{idProduct}=="4ee0", MODE="0666", GROUP="plugdev"
-adb devices
-adb reboot bootloader
-./fastboot devices
-./fastboot oem get_identifier_token`
+`sudo apt update`
+
+`sudo apt install android-tools-adb`
+
+`adb version`
+
+`echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="1782", ATTR{idProduct}=="4ee0", MODE="0666", GROUP="plugdev"' | sudo tee -a /etc/udev/rules.d/70-android.rules`
+
+`sudo chmod a+r /etc/udev/rules.d/70-android.rules`
+
+`sudo udevadm control --reload-rules`
+
+`sudo udevadm trigger`
+
+`sudo adb kill-server`
+
+`sudo adb start-server`
+
+`SUBSYSTEM=="usb", ATTR{idVendor}=="1782", ATTR{idProduct}=="4ee0", MODE="0666", GROUP="plugdev"`
+
+`adb devices`
+
+`adb reboot bootloader`
+
+`./fastboot devices`
+
+`./fastboot oem get_identifier_token`
   
   **4.3** You should get an output like:
 
@@ -109,18 +122,21 @@ OKAY [  0.019s]
 finished. total time: 0.019s`
   
   **4.4** Copy out the Identifier token and replace XXXXXXXXXXXXXXXXXXXXXXXX with your Identifier token with this command:
-./signidentifier_unlockbootloader.sh XXXXXXXXXXXXXXXXXXXXXXXX rsa4096_vbmeta.pem signature.bin
+`./signidentifier_unlockbootloader.sh XXXXXXXXXXXXXXXXXXXXXXXX rsa4096_vbmeta.pem signature.bin`
   
   **4.5** You should have an output like this:
 `Identifier sign script, ver 0.10
 1+0 records in
 1+0 records out
 50 bytes copied, 0.000257562 s, 194 kB/s
-Identifier sign successfully
+Identifier sign successfully`
+
   **4.6** You will see a signature.bin file in the modified_fastboot folder with it's date modified should be recent to the time you ran the last command
+  
   **4.7** Now run this command *./fastboot flashing unlock_bootloader signature.bin* and you should end with this result:
 2downloading 'unlock_message'...
-OKAY [ 0.016s]
+
+`OKAY [ 0.016s]
 unlocking bootloader...
 Info:Unlock bootloader success! OKAY [945.463s]
 finished. total time: 945.479s`
