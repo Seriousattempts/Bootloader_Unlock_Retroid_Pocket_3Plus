@@ -30,9 +30,7 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 **1.** Install Unisoc driver, extract adb to the extracted ums512_alldocube_iplay_50_EN_20230801 folder
 
 **2.0** Put RP3+ into Android Recovery/Download Mode (Turn off, turn on while holding power along with bottom volume button) while your device is plugged in (You'll hopefully hear it [at least on windows] connect as you turn it on with a black screen in download mode)
-
-  **2.1** Download Mode work better for me when I reformatted the device with a new .pac file 4/22/2025 
-  [https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8](https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8)
+  **2.1** Download Mode work better for me when I reformatted the device with a new .pac file 4/22/2025 [https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8](https://drive.google.com/drive/folders/1g9m8BlrCsdzXduEUfDERLilVLzxFQxX8)
 
 **3.** Run *unlock_autopatch_512.bat* from computer, and then enter fastboot on RP3+
 
@@ -41,22 +39,24 @@ Unlock Warning: After unlocking, an unlock warning message will appear on the sc
 **5.** Restart device back to recovery mode, go to "Apply update from ADB" and restart running *unlock_autopatch_512.bat* from computer, follow those instructions.
 
 **6.0** If that doesn't work:
+
   **6.1.** Restart RP3+ to normal use
-  
+
   **6.2.** Open cmd from file explorer folder of "ums512_alldocube_iplay_50_EN_20230801"
   
   Type the following:
+
   **6.3.** adb devices
-  
+
   **6.4.** adb push fdl1-dl.bin /data/local/tmp/
-  
+
   **6.5.** adb push fdl2-dl.bin /data/local/tmp/
-  
+
   **6.6.** unlock_autopatch_512
 
 ## Bootloader unlock using hovatek for Retroid Pocket 3+
 
-[https://www.hovatek.com/forum/thread-32287.html](https://www.hovatek.com/forum/thread-32287.html)
+(https://www.hovatek.com/forum/thread-32287.html)[https://www.hovatek.com/forum/thread-32287.html]
 
 This method must be done in Linux (Done via VirtualBox with Ubuntu distro)
 
@@ -85,8 +85,8 @@ VirtualBox method:
   **4.1** Open terminal for that folder
   
   **4.2** Run the following:
-  
-'sudo apt update
+
+`sudo apt update
 sudo apt install android-tools-adb
 adb version
 echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="1782", ATTR{idProduct}=="4ee0", MODE="0666", GROUP="plugdev"' | sudo tee -a /etc/udev/rules.d/70-android.rules
@@ -99,30 +99,31 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="1782", ATTR{idProduct}=="4ee0", MODE="0666", 
 adb devices
 adb reboot bootloader
 ./fastboot devices
-./fastboot oem get_identifier_token
+./fastboot oem get_identifier_token`
+  
   **4.3** You should get an output like:
-Identifier token:
+
+`Identifier token:
 XXXXXXXXXXXXXXXXXXXXXXXX
 OKAY [  0.019s]
-finished. total time: 0.019s
+finished. total time: 0.019s`
+  
   **4.4** Copy out the Identifier token and replace XXXXXXXXXXXXXXXXXXXXXXXX with your Identifier token with this command:
 ./signidentifier_unlockbootloader.sh XXXXXXXXXXXXXXXXXXXXXXXX rsa4096_vbmeta.pem signature.bin
+  
   **4.5** You should have an output like this:
-Identifier sign script, ver 0.10
+`Identifier sign script, ver 0.10
 1+0 records in
 1+0 records out
 50 bytes copied, 0.000257562 s, 194 kB/s
-Identifier sign successfully'
-
+Identifier sign successfully
   **4.6** You will see a signature.bin file in the modified_fastboot folder with it's date modified should be recent to the time you ran the last command
-  
   **4.7** Now run this command *./fastboot flashing unlock_bootloader signature.bin* and you should end with this result:
 2downloading 'unlock_message'...
-
-'OKAY [ 0.016s]
+OKAY [ 0.016s]
 unlocking bootloader...
 Info:Unlock bootloader success! OKAY [945.463s]
-finished. total time: 945.479s'
+finished. total time: 945.479s`
 
 
 The bootloader unlock is required before flashing any custom firmware or custom fixes like
@@ -131,5 +132,3 @@ The bootloader unlock is required before flashing any custom firmware or custom 
 1. GammaOS Lite v1.5.1 - Anbernic RG505: Device doesn't install GammaOS after running EraseUserData
 2. GammaOS v1.5.1 - Anbernic RG505: Device doesn't install GammaOS after running EraseUserData
 3. GammaOS Core Alternative Flashing Guide using RKDevTool (It's not Rockchip, duh) https://www.youtube.com/watch?v=_-6ZYrNGTRs
-
-
